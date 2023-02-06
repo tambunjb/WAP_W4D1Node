@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>q4</title>
+    </head>
+    <body>
+        <h1><%=name%></h1>
+        <h2><%=price%></h2>
+        <h3><%=description%></h3>
+        <form action="/addToCart" method="post">
+            <input type="hidden" name="id" value=<%=id%> />
+            <input type="submit" value="Add To Cart" />
+        </form>
+    </body>
+</html>
